@@ -59,7 +59,7 @@ body {
 
 /* Responsive Dropdown styles */
 
-.dropdown{
+.dropdown {
     display: none;
     width: 100%;
 }
@@ -78,7 +78,7 @@ body {
     /* z-index: 1; */
 }
 
-.options>a{
+.options>a {
     padding: 5%;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
     text-decoration: none;
@@ -274,6 +274,75 @@ body {
     font-size: 20px;
 }
 
+/* Reviews styles */
+
+.reviews-container {
+    width: 75%;
+    margin: 0 auto;
+    /* background-color:#FFF4E7; */
+    /* border-radius: 8px; */
+}
+
+.reviews-container-title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: 2%;
+}
+
+.reviews{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.review{
+    width: 242px;
+    height: 242px;
+    padding: 5%;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    margin-bottom: 5%;
+    /* column-gap: 5%; */
+}
+
+.reviewer-details{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.reviewer-details img{
+    width: 56px;
+    height: 56px;
+}
+
+.reviewer-info{
+    text-align: center;
+}
+
+.reviewer-info>p{
+    font-weight: 600;
+    font-size: 20px;
+    color: #131313;
+}
+
+.review-info {
+    color: #727272;
+}
+
+.review-info>strong{
+    color: black;
+}
+
+.star{
+    color: #FF900E;
+}
+
+
 /* Sponsor styles */
 .sponsors {
     display: flex;
@@ -357,7 +426,7 @@ body {
 
     /* Dropdown styles */
 
-    .dropdown{
+    .dropdown {
         display: block;
     }
 
@@ -365,14 +434,14 @@ body {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    
-    .options>a:hover{
+
+    .options>a:hover {
         background-color: #424242;
     }
 
     /* Banner styles */
 
-    .banner{
+    .banner {
         margin-top: 0;
     }
 
@@ -439,6 +508,12 @@ body {
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
         gap: 5%;
+    }
+
+    /* Reviews styles */
+
+    .reviews{
+        grid-template-columns: repeat(1, 1fr);
     }
 
     /* Sponsor styles */
