@@ -457,7 +457,7 @@ body {
     width: 100%;
 }
 
-.sponsor-icon-container>img {
+.sponsor-icon-container a>img {
     filter: grayscale(100%);
 }
 
@@ -618,7 +618,7 @@ body {
         align-items: center;
     }
 
-    .sponsor-icon-container>img {
+    .sponsor-icon-container a>img {
         margin-bottom: 3%;
     }
 
