@@ -57,6 +57,17 @@ body {
     margin: auto;
 }
 
+.dropdown{
+    /* display: none; */
+}
+
+.dropdown-button{
+    padding: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
 /* Banner styles */
 .banner{
     display: flex;
@@ -79,6 +90,10 @@ body {
 .banner-info{
     color: #727272;
     margin-bottom: 32px;
+}
+
+.banner>img{
+    width: 75%;
 }
 
 /* Quick list of features Styles */
@@ -289,6 +304,138 @@ body {
     color: #424242;
 }
 
+.hide{
+    display: none;
+}
+
 @media only screen and (max-width: 576px) {
-    
+
+    /* Header styles */
+
+    /* Navigation bar styles */
+
+    .header nav{
+        width: 95%;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+
+    .nav a>h3{
+        font-size: 80%;
+    }
+
+    .dropdown{
+        width: 100%;
+        display: inline;
+    }
+
+    /* Banner styles */
+
+
+    .banner-text{
+        width: 100%;
+    }
+
+    .banner-title{
+        font-size: 2em; 
+    }
+
+    .banner>img{
+        width: 100%;
+    }
+
+    /* Quick list styles */
+
+    .quick-list{
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .list-details{
+
+        text-align: center;
+    }
+
+    .list-image{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Features styles */
+
+    .features{
+        grid-template-columns: repeat(1, 1fr);
+        width: 95%;
+        justify-items: center;
+    }
+
+    .feature-image>img{
+        width: 100%;
+        margin-bottom: 1%;
+    }
+
+    .big-button{
+        position: static;
+    }
+
+    /* Facts styles */
+
+    .facts{
+        margin: 3% 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .facts-info{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .fact-icons-container{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 5%;
+    }
+
+    /* Sponsor styles */
+
+    .sponsors{
+        width: 100%;
+        margin-top: 3%;
+        text-align: center;
+        /* flex-wrap: wrap; */
+        /* flex-direction: column; */
+    }
+
+    .sponsor-detail-container{
+        width: 95%;
+        margin-bottom: 5%;
+    }
+
+    .sponsor-icon-container{
+        width: 100%;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sponsor-icon-container>img{
+        margin-bottom: 3%;
+    }
+
+    .sponsor-title{
+        font-size: 2.5em;
+    }
+
+    /* Footer styles */
+
+    .footer{
+        padding: 3% 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .footer-text{
+        font-size: .75em;
+    }
 }
